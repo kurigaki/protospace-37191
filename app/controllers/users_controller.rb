@@ -5,7 +5,7 @@ class UsersController < ApplicationController
     @profile = @user.profile
     @occupation = @user.occupation
     @position = @user.position
-    @prototype = Prototype.all
+    @prototype = @user.prototypes
   end
 
 end
